@@ -28,7 +28,7 @@ String estado = entUsuario.getEstado();
      
         <%}%>
         
-        
+        // hola soy fea tengo mocos
        <li><font color="tan"> <a href="./UsuarioServlet?action=salir" title="Cerrar sesion">Cerrar Sesion</a></font></li>
         <%}else{%>
         <tr><td>!..Usted no está Activo..¡</td></tr>
