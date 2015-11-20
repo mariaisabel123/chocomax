@@ -1,0 +1,19 @@
+
+
+#formulario {
+
+background: #e1c192 url(css/Imagenes/fondo.png);
+
+background:#D2B48C;
+width: 100px center;
+padding: 150px center;
+margin: 50px;
+
+border-radius:0px;
+moz-border-radius: 0px;
+webkit-border-radius:270px;
+line-height: 1.5;
+font-family: Arial,sans-MS;
+}
+
+
