@@ -23,12 +23,13 @@ String estado = entUsuario.getEstado();
         
           <% if("cliente".equals(perfil)){%>      
     
-       <li><a href="#" title="">Productos</a> </li>
-       <li><a href="#" title="">Opción y</a> </li>
+        <li><font color="tan"><a href="ClienteServlet" title="">Cliente</a></font></li>
+        <li><font color="tan"><a href="productos.jsp" title="">Productos</a></font></li>
+        <li><font color="tan"><a href="FPedidos.jsp" title="">Pedidos</a></font></li>
      
         <%}%>
         
-        // hola soy fea tengo mocos
+       
        <li><font color="tan"> <a href="./UsuarioServlet?action=salir" title="Cerrar sesion">Cerrar Sesion</a></font></li>
         <%}else{%>
         <tr><td>!..Usted no está Activo..¡</td></tr>
