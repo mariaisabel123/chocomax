@@ -5,7 +5,7 @@
 --%>
 
 
-        <h1>Ayuda...</h1>
+        <h1><font color="tan">Ayuda...</font></h1>
 <style>
 
 body {
