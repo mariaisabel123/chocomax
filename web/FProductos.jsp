@@ -21,8 +21,9 @@
             (List<productos>) request.getAttribute("Listado1"):null;
  productos prod=(productos) request.getAttribute("datoproducto")!=null?
           (productos) request.getAttribute("datoproducto"):null;
- //los datos estan cargadoes en un usu(objeto) detipo Usuario
- //cargamos los datos en las variables
+ //Se cargan los datos en las variables creadas 
+ //los datos estan cargado es en un usu(objeto) de tipo Usuario
+ 
  if(prod!=null){
      codproducto=prod.getCodproducto();
      descripcion=prod.getDescripcion();
@@ -68,12 +69,15 @@
                     <table>
                         <tr>
                             <td>Cod_Producto</td>
+                            // En cada campo del formulario se le llama para que al 
+                            listarlo llame todo lo que se encuentra en la basse de datos
                             <td><input type="text" name="txtcodproducto" value="<%=codproducto!=null?codproducto:"" %>" size="20" maxlength="8" 
                                        onkeypress="return numeros(event);">
                             </td>
 
 
-
+                           // En cada cambbo del formulario se le llama para que al 
+                            listarlo llame todo lo que se encuentra en la basse de datos
                             <td>Descripcion</td>
                             <td><input type="text" name="txtdescripcion" value="<%=descripcion!=null?descripcion:"" %>" size="20" maxlength="20" 
                                        onkeypress="return sololetras(event);"></td>
@@ -125,7 +129,7 @@
                                     
                                      <br>Datos enviados  <%=dat1%>
                                      <br>Mensaje recibido  <%=men1%>
-                                    <%if(LP!= null) {%>
+                                    <%inf(LP!= null) {%>
                 <table>
                    <tr>
                         <td>Codproducto</td>  
@@ -139,7 +143,7 @@
                         
                     </tr>  
                     <!--Recorrer para cargar los datos-->
-                    <%for(productos po:LP) {%>
+                    <%for(producto po:LP) {%>
                     <tr>
                         <td><%=po.getCodproducto()%> </td>
                         <td><%=po.getDescripcion()%> </td>
